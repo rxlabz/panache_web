@@ -1,0 +1,22 @@
+name: panache_web
+description: panache for the web
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  panache_lib:
+    #git: https://github.com/rxlabz/panache_lib
+    path: /Users/rxlabz/projects/Panache/dev/017/panache_lib
+  scoped_model: ^1.0.1
+
+flutter:
+  uses-material-design: true
