@@ -17,6 +17,7 @@ dev_dependencies:
     #git: https://github.com/rxlabz/panache_lib
     path: /Users/rxlabz/projects/Panache/dev/017/panache_lib
   scoped_model: ^1.0.1
+  js: any
 
 flutter:
   uses-material-design: true
