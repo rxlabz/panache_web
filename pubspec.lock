@@ -158,20 +158,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
-  shared_preferences:
-    dependency: transitive
-    description:
-      name: shared_preferences
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.4.3"
-  shared_preferences_fde:
-    dependency: transitive
-    description:
-      path: "/Users/rxlabz/dev/tools/flutter_desktop/flutter-desktop-embedding/plugins/flutter_plugins/shared_preferences_fde"
-      relative: false
-    source: path
-    version: "0.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
