@@ -6,6 +6,8 @@ import 'package:scoped_model/scoped_model.dart';
 import 'src/theme_exporter_web.dart';
 import 'src/web_local_data.dart';
 
+const version = 'alpha2';
+
 void main() async {
   clearPersisted();
   final localData = WebLocalData();

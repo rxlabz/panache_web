@@ -2,39 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>panache_web</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+    <title>Panache, create your Flutter Material theme </title>
+    <description>Panache is a Flutter theme editor.</description>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
           rel="stylesheet">
-    <script type="text/javascript">
-      function saveTheme(content, filename, onFileSaved) {
-        console.log('saveTheme', filename);
-        var element = document.createElement('a');
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
-        element.download = filename;
-        element.style.display = 'none';
-        document.body.appendChild(element);
-        element.click();
-        document.body.removeChild(element);
-        console.log('<-');
-        onFileSaved(true);
-      }
-
-      function setProp(propertyName, value){
-        if( !value )
-          localStorage.removeItem(propertyName);
-          else
-        localStorage.setItem(propertyName, value);
-      }
-
-      function getProp(propertyName){
-        return localStorage.getItem(propertyName);
-      }
-    </script>
 </head>
 <body>
+
 <script src="main.dart.js" type="application/javascript"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56074942-9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -43,6 +19,29 @@
 
   gtag('config', 'UA-56074942-9');
 </script>
+<script type="text/javascript">
 
+  function saveTheme(content, filename, onFileSaved) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
+    element.download = filename;
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+    onFileSaved(true);
+  }
+
+  function setProp(propertyName, value){
+    if( !value )
+      localStorage.removeItem(propertyName);
+    else
+      localStorage.setItem(propertyName, value);
+  }
+
+  function getProp(propertyName){
+    return localStorage.getItem(propertyName);
+  }
+</script>
 </body>
 </html>
